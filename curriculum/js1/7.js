@@ -5,10 +5,11 @@
  * @returns {boolean}
  */
 
-const solution = (a) => {
-  return 0;
+const solution = (a, i=3) => {
+  if (a === i || a === 2) return true;
+  if (a === 1 || a % i === 0) return fales;
+  return solution(a, i+1);
 };
-
 module.exports = {
   solution,
 };
